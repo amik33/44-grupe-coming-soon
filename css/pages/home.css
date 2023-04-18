@@ -10,4 +10,19 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 
+.logo {
+    width: 50px;
 
+}
+.main-title {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+
+}
+.main-description {
+    text-align: center;
+    font-size: 20px;
+
+
+}
