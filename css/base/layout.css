@@ -2,14 +2,28 @@
     width: 100%;
     padding: 60px 0;
 }
-
+.container > .row-short {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 600px;
+    margin: 0 calc(50% - 300px);
+}
 .container > .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 10%;
     width: 1000px;
     margin: 0 calc(50% - 500px);
 }
-.container > .row-short {
-    width: 600px;
-    margin: 0 calc(50% - 300px);
+.container .column {
+    width: 50%;
+    
+}
+.column.right-column {
+    width: 40%;
+    
 }
 @media ( max-width: 1100px) {
     .container > .row {
@@ -24,14 +38,17 @@
     }
 }
 @media ( max-width: 700px) {
-    .container > .row
+    .container > .row,
     .container > .row-short {
         width: 400px;
         margin: 0 calc(50% - 200px);  
     }
+    .container .column, 
+    .column.right-column {
+        width: 100%;
+    }
 }  
-
-@media ( max-width: 400px) {
+@media ( max-width: 440px) {
         .container {
             padding-right: 20px;
             padding-left: 20px;
@@ -47,7 +64,20 @@
 }
 
 
-/* .container {
-display: flex;
-justify-content: center;
-} */
+/* 1. daugiau laimi pries maziau
+2. ">" neturi itakos
+3. laimi tas kuris yra paskutinis faile
+4. net ir 1 klase laimi pries N tagu
+5. net ir 1 ID laimi pries N klasiu ir M tagu */
+
+/* 1. tag < klases < ID
+2. kiekis: kuo daugiau, tuo geriau
+3. jei (kiekis) sutampa - tai laimi paskutinis */
+
+    /* .x {}                0.1.0
+    div {}               0.0.1
+    div.x {}             0.1.1
+    div.y {}             0.1.1
+    div.y.x {}           0.2.1
+
+    cia - div-tag, .y.x - klases */
