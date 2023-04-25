@@ -5,11 +5,19 @@
 @import '../3rd-party/font-awesome.min.css';
 /* component */
 @import '../components/clock.css';
+@import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
-
+.hero {
+    background-image: url(../../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 .logo {
     width: 3.0rem;
 
