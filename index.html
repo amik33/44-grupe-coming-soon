@@ -17,7 +17,7 @@
 </head>
 <body>
     <main>
-        <section class="container bg-main">
+        <section class="container bg-main hero">
             <div class="row-short">
                 <img class="logo" src="./img/favicon.png" alt="Logo">
                 <h1 class="main-title">Coming soon</h1>
@@ -40,6 +40,12 @@
                         <div class="label">Seconds</div>
                     </div>
                 </div>
+                <form class="type-email">
+                    <label for="email">Type your email</label>
+                    <input id="email" type="email" placeholder="Type your email" autocomplete="email" required>
+                    <button class="btn" type="submit">Subscribe Now</button>
+                </form>
+                <div class="mouse"></div>
             </div>
         </section>
         <section class="container">
@@ -53,7 +59,9 @@
                             <div class="value">90%</div>
                         </div>
                         <div class="bottom">
-                            <div class="progress"></div>
+                            <div class="progress">
+                                <div class="bar"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="progress-bar">
@@ -62,7 +70,9 @@
                             <div class="value">86%</div>
                         </div>
                         <div class="bottom">
-                            <div style="width: 86%;" class="progress"></div>
+                            <div style="width: 86%;" class="progress">
+                                <div class="bar"></div>
+                            </div>  
                         </div>
                     </div>
                     <div class="progress-bar">
@@ -71,26 +81,40 @@
                             <div class="value">50%</div>
                         </div>
                         <div class="bottom">
-                            <div style="width: 50%;" class="progress"></div>
+                            <div style="width: 50%;" class="progress">
+                                <div class="bar"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="column right-column">
                     <h2>Have any question?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, voluptatum., ipsum dolor sit amet consectetur adipisicing elit. Quis, culpa.</p>
+                    <form class="form">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Name" autocomplete="name" required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Email" autocomplete="email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Message" required></textarea>
+                        <button class="btn" type="submit" >Send message</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
     <footer class="container bg-main">
-        <div class="row socials">
-            <a class="fa fa-facebook" href="#"></a>
-            <a class="fa fa-twitter" href="#"></a>
-            <a class="fa fa-dribbble" href="#"></a>
-            <a class="fa fa-tumblr" href="#"></a>
-            <a class="fa fa-linkedin" href="#"></a>
-            <a class="fa fa-instagram" href="#"></a>
-            <a class="fa fa-wifi" href="#"></a>
+        <div class="row">
+            <div class="socials">
+                <a class="fa fa-facebook" href="#"></a>
+                <a class="fa fa-twitter" href="#"></a>
+                <a class="fa fa-dribbble" href="#"></a>
+                <a class="fa fa-tumblr" href="#"></a>
+                <a class="fa fa-linkedin" href="#"></a>
+                <a class="fa fa-instagram" href="#"></a>
+                <a class="fa fa-wifi" href="#"></a>
+            </div>
+            <a class="btn btn-circle fa fa-angle-up" href="#"></a>
         </div>
         <div class="row-short">
             <img class="footer-logo" src="./img/logo-wide.png" alt="logo">
