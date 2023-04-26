@@ -20,13 +20,11 @@
 }
 .logo {
     width: 3.0rem;
-
 }
 .main-title {
     text-align: center;
     font-size: 4.5rem;
     text-transform: uppercase;
-
 }
 .main-description {
     text-align: center;
@@ -55,7 +53,7 @@ footer.container {
 }
 .row.socials > a:hover {
     background-color: #fff;
-    color: #03a9f3;
+    color: var(--main-color);
     transition: all 2s;
 }
 footer > .row-short {
@@ -97,5 +95,10 @@ footer > .row-short a {
     .text-trio > p::after {
         display: block;
        
+    }
+}
+@media (max-width: 22rem) {
+    .main-title {
+    font-size: 3.5rem;
     }
 }
